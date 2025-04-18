@@ -1,0 +1,7 @@
+.container {
+  @apply w-full max-w-[1272px] mx-auto;
+}
+
+@theme {
+  --color-primary: #2b5278;
+}

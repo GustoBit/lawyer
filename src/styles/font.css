@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500;600&display=swap');
+
+.cm {
+  font-family: 'Cormorant Infant', serif;
+  font-weight: 500;
+}
+.cs {
+  font-family: 'Cormorant Infant', serif;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Tilda Sans';
+  src: url('../assets/tilda/tb.ttf') format('truetype');
+}
+.tb {
+  font-family: 'Tilda Sans';
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Tilda Sans';
+  src: url('../assets/tilda/tr.ttf') format('truetype');
+}
+.tr {
+  font-family: 'Tilda Sans';
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Tilda Sans';
+  src: url('../assets/tilda/tm.ttf') format('truetype');
+}
+.tm {
+  font-family: 'Tilda Sans';
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Tilda Sans';
+  src: url('../assets/tilda/ts.ttf') format('truetype');
+}
+.ts {
+  font-family: 'Tilda Sans';
+  font-weight: 600;
+}
