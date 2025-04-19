@@ -2,17 +2,20 @@
   <div class="container">
     <titlePage to="#" title="ЧТО МЫ ПРЕДЛАГАЕМ?" />
 
-    <div class="grid grid-cols-4 gap-5">
+    <div class="grid grid-cols-1 xl:grid-cols-4 gap-5">
       <div
         v-for="(item, index) of info"
         :key="index"
-        :class="['w-[303px] h-[471px] flex flex-col', index % 2 !== 0 ? 'justify-end' : '']"
+        :class="[
+          'xl:w-[303px] xl:h-[471px] flex flex-col',
+          index % 2 !== 0 ? 'xl:justify-end' : '',
+        ]"
       >
         <div class="bg-[#F6F7F9] rounded-2xl p-5">
-          <h1 class="text-[#27292A] tm text-2xl tracking-[3%] mb-[81px]">
+          <h1 class="text-[#27292A] tm text-2xl tracking-[3%] mb-5 xl:mb-[81px]">
             {{ item.title }}
           </h1>
-          <p class="tr text-[22px] tracking-[3%] leading-tight text-[#27292A] mb-[113px]">
+          <p class="tr text-[22px] tracking-[3%] leading-tight text-[#27292A] mb-10 xl:mb-[113px]">
             {{ item.text }}
           </p>
           <button

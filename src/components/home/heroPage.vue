@@ -1,9 +1,9 @@
 <template>
-  <div class="container mt-[50px]">
+  <div class="container mt-5 xl:mt-[50px]">
     <div class="space-y-5">
       <!-- FIRST PART -->
-      <div class="grid grid-cols-[auto_518px] gap-5 items-center">
-        <h1 class="text-gray-800 tr text-[48px] leading-[126%]">
+      <div class="space-y-5 xl:space-y-0 xl:grid grid-cols-[auto_518px] gap-5 items-center">
+        <h1 class="text-gray-800 tr text-4xl text-center xl:text-left xl:text-5xl leading-[126%]">
           <span class="cm italic text-[#6999C8]"> Надёжная </span> юридическая
           <span class="cm italic text-[#6999C8]"> поддержка </span>, на которую можно рассчитывать в
           <span class="cm italic text-[#6999C8]"> любой ситуации </span>
@@ -19,30 +19,24 @@
       </div>
 
       <!-- SECOND PART -->
-      <div class="grid grid-cols-[411px_auto] gap-5">
+      <div class="space-y-5 xl:space-y-0 xl:grid grid-cols-[411px_auto] gap-5">
         <!-- FIRST PART -->
         <Splide
           :has-track="false"
           :options="options"
-          class="w-[411px] h-[581px] overflow-hidden rounded-2xl relative"
+          class="w-full h-[300px] xl:w-[411px] xl:h-[581px]"
           v-if="array?.length > 0"
         >
-          <SplideTrack class="w-full h-full rounded-3xl overflow-hidden boxShadow">
+          <SplideTrack class="w-full h-full">
             <SplideSlide class="w-full h-full p-0" v-for="item of array" :key="item.to">
-              <img :src="`${item.img}`" alt="" class="w-full h-full object-cover object-center" />
+              <div class="w-full h-full rounded-3xl overflow-hidden">
+                <img :src="`${item.img}`" alt="" class="w-full h-full object-cover object-center" />
+              </div>
             </SplideSlide>
           </SplideTrack>
 
           <div class="px-[31px] py-[26px] absolute inset-0 bottom-0 rounded-2xl">
-            <div class="flex flex-col justify-between h-full">
-              <!-- BUTTONS -->
-              <div class="px-10">
-                <div class="splide__progress h-[10px] bg-[#9CBECB] rounded-full overflow-hidden">
-                  <div class="splide__progress__bar !h-full rounded-full !bg-primary" />
-                </div>
-              </div>
-
-              <!-- TEXT -->
+            <div class="flex flex-col justify-end h-full">
               <div class="line-clamp-3 tm text-[32px] text-white leading-tight">
                 Мы <span class="cs italic"> решаем </span> правовые вопросы – вы живёте
                 <span class="cs italic"> спокойно </span>
@@ -54,28 +48,30 @@
         <!-- SECOND PART -->
         <div
           :class="[
-            'relative w-[841px] h-[581px] rounded-2xl rounded-br-[30px] overflow-hidden group',
+            'relative w-full h-[350px] xl:w-[841px] xl:h-[581px] rounded-2xl rounded-br-[24px] xl:rounded-br-[30px] overflow-hidden group ',
           ]"
         >
           <img src="@/assets/img/heroimg4.jpg" alt="" class="w-full h-full object-cover" />
 
           <!-- TITLE -->
           <div class="absolute inset-0 p-[36px] pointer-events-none">
-            <h1 class="ts text-[48px] text-white max-w-[624px] leading-tight">
+            <h1
+              class="ts text-2xl line-clamp-2 xl:line-clamp-3 xl:text-5xl text-white max-w-[624px] leading-tight"
+            >
               Простые решения сложных вопросов, связанных с правом
             </h1>
           </div>
 
           <!-- BUTTON -->
           <div
-            class="absolute bottom-0 right-0 bg-white w-[40%] h-20 rounded-tl-3xl pt-5 pl-5 transform translate-y-full group-hover:translate-0 transition duration-200"
+            class="absolute bottom-0 right-0 bg-white w-[300px] xl:w-[40%] h-16 xl:h-20 rounded-tl-3xl pt-4 pl-4 xl:pt-5 xl:pl-5 transform xl:translate-y-full group-hover:translate-0 transition duration-200"
           >
             <button
               type="button"
-              class="ring-1 ring-inset ring-gray-900 rounded-[50px] p-[26px] w-full h-full cursor-pointer flex items-center justify-between hover:bg-primary group/button hover:ring-primary transition duration-200"
+              class="ring-1 ring-inset ring-gray-900 rounded-[50px] p-4 xl:p-[26px] w-full h-full cursor-pointer flex items-center justify-between hover:bg-primary group/button hover:ring-primary transition duration-200"
             >
               <p
-                class="tm text-2xl text-gray-900 group-hover/button:text-white transition duration-200"
+                class="tm text-xl xl:text-2xl text-gray-900 group-hover/button:text-white transition duration-200"
               >
                 Наши услуги
               </p>
@@ -97,10 +93,10 @@
 
           <!-- HELPERS -->
           <span
-            class="absolute bottom-20 right-0 w-10 h-10 rounded-full bg-transparent shadow-[20px_20px_0_#fff] transform translate-y-[300%] group-hover:translate-0 transition duration-200"
+            class="absolute bottom-16 xl:bottom-20 right-0 w-10 h-10 rounded-full bg-transparent shadow-[20px_20px_0_#fff] transform xl:translate-y-[300%] group-hover:translate-0 transition duration-200"
           />
           <span
-            class="absolute right-[40%] bottom-0 w-10 h-10 bg-transparent rounded-full shadow-[20px_20px_0_#fff] transform translate-y-full group-hover:translate-0 transition duration-200"
+            class="absolute right-[300px] xl:right-[40%] bottom-0 w-10 h-10 bg-transparent rounded-full shadow-[20px_20px_0_#fff] transform xl:translate-y-full group-hover:translate-0 transition duration-200"
           />
           <!-- HELPERS -->
         </div>
@@ -119,7 +115,7 @@ const options = {
   interval: 3000,
   perPage: 1,
   arrows: false,
-  pagination: false,
+  pagination: true,
   drag: false,
   speed: 800,
   pauseOnHover: false,
@@ -149,3 +145,23 @@ const array = [
   },
 ]
 </script>
+
+<style>
+.splide__pagination {
+  top: 25px;
+  align-items: start;
+  gap: 7px;
+}
+.splide__pagination__page {
+  background-color: #9cbecb;
+  width: 16px;
+  height: 6px;
+  border-radius: 10px;
+}
+.splide__pagination__page.is-active {
+  background-color: #0d2938;
+  width: 44px;
+  height: 6px;
+  border-radius: 10px;
+}
+</style>

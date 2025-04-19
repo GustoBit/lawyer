@@ -1,11 +1,11 @@
 <template>
-  <div class="grid grid-cols-3 gap-5">
+  <div class="grid grid-cols-1 xl:grid-cols-3 gap-5">
     <div v-for="item of array" :key="item.text">
       <div
         class="rounded-2xl rounded-br-[38px] overflow-hidden w-[411px] h-[359px] relative group/card bg-[#D3E3F2] flex items-center justify-center"
       >
         <div
-          class="absolute bottom-0 right-0 w-[92px] h-[92px] bg-white flex items-end justify-end rounded-tl-3xl transform translate-y-full group-hover/card:translate-y-0 transition duration-200 z-20"
+          class="absolute bottom-0 right-0 w-[92px] h-[92px] bg-white flex items-end justify-end rounded-tl-3xl transform xl:translate-y-full group-hover/card:translate-y-0 transition duration-200 z-20"
         >
           <button
             type="button"
@@ -33,7 +33,7 @@
         />
       </div>
 
-      <h1 class="mt-[26px] mb-4 text-[#27292A] tm tracking-[3%] text-2xl">
+      <h1 class="mt-2 mb-1 xl:mt-[26px] xl:mb-4 text-[#27292A] tm tracking-[3%] text-2xl">
         {{ item.text }}
       </h1>
       <p class="text-[#6E7A80] tm tracking-[3%] text-2xl">{{ item.date }}</p>

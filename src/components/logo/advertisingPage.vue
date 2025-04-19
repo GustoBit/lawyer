@@ -1,5 +1,5 @@
 <template>
-  <div class="my-[80px] py-4">
+  <div class="my-14 xl:my-[80px] py-4">
     <Splide
       :has-track="false"
       :extensions="{ AutoScroll }"
@@ -19,6 +19,11 @@
           speed: 0.5,
           pauseOnHover: true,
           pauseOnFocus: false,
+        },
+        breakpoints: {
+          500: {
+            gap: 30,
+          },
         },
       }"
       class=""

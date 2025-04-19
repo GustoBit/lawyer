@@ -1,5 +1,5 @@
 <template>
-  <div class="container my-[80px]">
+  <div class="container my-14 xl:my-[80px]">
     <titlePage to="#" title="НАШИ РАБОТЫ" />
     <cardPage :array="array" />
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute left-full top-[146px] pointer-events-none">
+  <div class="xl:block hidden absolute left-full top-[146px] pointer-events-none">
     <svg
       width="189"
       height="112"

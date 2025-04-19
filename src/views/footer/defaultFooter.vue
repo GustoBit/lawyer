@@ -7,7 +7,9 @@
 
         <!-- FORM -->
         <div class="flex flex-col items-center gap-[30px]">
-          <h1 class="tr text-5xl text-white -tracking-[2%] text-center">Свяжитесь с нами</h1>
+          <h1 class="tr text-4xl xl:text-5xl text-white -tracking-[2%] text-center">
+            Свяжитесь с нами
+          </h1>
           <p class="tr text-center text-2xl text-[#FFFFFF]/75 leading-[27px]">
             Получите профессиональную консультацию — мы всегда готовы помочь вам разобраться в
             юридических вопросах.
@@ -16,7 +18,7 @@
           <div class="relative">
             <input
               type="email"
-              class="pl-4 pr-12 ring-1 ring-inset ring-[#3F658A] rounded-[50px] w-[384px] h-[52px] outline-none text-[#FFFFFF] leading-[27px] text-2xl placeholder:text-[#3F658A] bg-transparent transition-all duration-300 ease-in-out focus:ring-2 focus:ring-[#61A3D9]"
+              class="pl-4 pr-12 ring-1 ring-inset ring-[#3F658A] rounded-[50px] xl:w-[384px] h-[52px] outline-none text-[#FFFFFF] leading-[27px] text-2xl placeholder:text-[#3F658A] bg-transparent transition-all duration-300 ease-in-out focus:ring-2 focus:ring-[#61A3D9]"
               placeholder="user@gmail.com"
             />
 
@@ -30,17 +32,21 @@
         </div>
       </div>
 
-      <div class="pt-10 border-t border-[#4C6F92]">
-        <div class="flex items-center justify-between">
+      <div class="pt-5 xl:pt-10 border-t border-[#4C6F92]">
+        <div class="flex flex-col xl:flex-row gap-5 xl:gap-0 items-center justify-between">
           <h2 class="tr text-[#B2CAE2] text-2xl leading-[27px]">Политика конфиденциальности</h2>
-          <nav class="flex items-center gap-[30px]">
+          <nav class="flex flex-col xl:flex-row items-center gap-4 xl:gap-[30px]">
             <router-link
               to="#"
               v-for="item of link"
               :key="item.to"
-              class="text-white tr text-[20px] hover:underline"
-              >{{ item.title }}</router-link
+              class="text-white tr text-[20px] relative group"
             >
+              {{ item.title }}
+              <span
+                class="absolute top-full left-0 w-0 h-[2px] group-hover:w-full transition-all duration-300 rounded-2xl bg-white"
+              />
+            </router-link>
           </nav>
           <nav class="flex items-center gap-[14px]">
             <a

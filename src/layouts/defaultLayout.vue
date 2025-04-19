@@ -1,7 +1,7 @@
 <template>
-  <section class="py-10 flex flex-col">
+  <section class="flex flex-col py-4 xl:py-10">
     <defaultHeader />
-    <main>
+    <main class="flex-1">
       <router-view />
     </main>
     <defaultFooter />

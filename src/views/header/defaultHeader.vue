@@ -3,7 +3,7 @@
     <div class="flex items-center justify-between">
       <div class="text-4xl cm uppercase">logo</div>
 
-      <div class="flex items-center gap-[46px]">
+      <div class="hidden xl:flex items-center gap-[46px]">
         <nav class="flex items-center gap-10">
           <router-link
             v-for="item of nav"
@@ -25,10 +25,12 @@
           Свяжитесь с нами
         </button>
       </div>
+      <Bars3Icon class="w-10 h-10 text-primary xl:hidden" />
     </div>
   </div>
 </template>
 <script setup>
+import { Bars3Icon } from '@heroicons/vue/24/outline'
 const nav = [
   {
     to: 'main',

@@ -1,13 +1,13 @@
 <template>
-  <div class="mb-[80px] container">
-    <div class="grid grid-cols-2 gap-5">
-      <div class="p-[26px] bg-[#F2F6FA] rounded-3xl flex flex-col">
+  <div class="mb-20 xl:mb-[80px] container">
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-5">
+      <div class="p-3 xl:p-[26px] bg-[#F2F6FA] rounded-3xl flex flex-col">
         <div class="space-y-[26px]">
           <div>
-            <h1 class="tm text-[50px] leading-tight text-gray-900">
+            <h1 class="tm text-4xl xl:text-[50px] leading-tight text-gray-900">
               Ваш надежный юридический партнер:
             </h1>
-            <h1 class="cs italic text-[50px] text-primary leading-tight">
+            <h1 class="cs italic text-4xl xl:text-[50px] text-primary leading-tight">
               экспертность, прозрачность, уверенность
             </h1>
           </div>
@@ -16,9 +16,9 @@
             <li
               v-for="(item, index) of info"
               :key="index"
-              class="rounded-2xl bg-[#FCFDFF] py-5 pl-[23px]"
+              class="rounded-2xl bg-[#FCFDFF] py-2 pl-2 xl:py-5 xl:pl-[23px]"
             >
-              <p class="tm text-[26px] text-primary leading-tight">
+              <p class="tm text-[20px] line-clamp-1 xl:text-[26px] text-primary leading-tight">
                 {{ index + 1 }}. {{ item.msg }}
               </p>
             </li>
@@ -27,7 +27,7 @@
 
         <button
           type="button"
-          class="flex items-center justify-between w-[288px] rounded-[50px] bg-primary py-4 px-[25px] cursor-pointer group transition-all duration-300 hover:bg-primary/90 mt-auto"
+          class="flex items-center justify-between w-[288px] rounded-[50px] bg-primary py-2 px-4 xl:py-4 xl:px-[25px] cursor-pointer group transition-all duration-300 hover:bg-primary/90 mt-10 xl:mt-auto"
         >
           <span class="tm text-2xl text-white leading-tight"> Наши услуги </span>
           <svg
@@ -46,7 +46,7 @@
         </button>
       </div>
 
-      <div class="w-[626px] h-[767px] rounded-3xl overflow-hidden">
+      <div class="h-[400px] xl:w-[626px] xl:h-[767px] rounded-3xl overflow-hidden">
         <img
           src="@/assets/img/hummer.jpg"
           alt=""
