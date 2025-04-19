@@ -49,7 +49,7 @@
             <rightLine />
             <leftLine />
 
-            <div class="absolute top-[115%] right-[55%] xl:-right-[334px] xl:bottom-[115px]">
+            <div class="absolute top-[115%] right-[52%] xl:-right-[334px] xl:bottom-[115px]">
               <div class="bg-[#F6F7F9] p-2 xl:py-[18px] xl:px-[37px] rounded-2xl">
                 <h1 class="text-primary cm text-4xl xl:text-[51px] text-center leading-none line-clamp-1">
                   2315
@@ -61,7 +61,7 @@
                 </div>
               </div>
             </div>
-            <div class="absolute top-[115%] left-[55%] xl:-left-[321px] xl:bottom-[170px]">
+            <div class="absolute top-[115%] left-[52%] xl:-left-[321px] xl:bottom-[170px]">
               <div class="bg-[#F6F7F9] p-2 xl:py-[18px] xl:px-[37px] rounded-2xl">
                 <h1 class="text-primary cm text-4xl xl:text-[51px] text-center leading-none line-clamp-1">
                   2344

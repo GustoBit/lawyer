@@ -18,7 +18,7 @@
           <div class="relative">
             <input
               type="email"
-              class="pl-4 pr-12 ring-1 ring-inset ring-[#3F658A] rounded-[50px] xl:w-[384px] h-[52px] outline-none text-[#FFFFFF] leading-[27px] text-2xl placeholder:text-[#3F658A] bg-transparent transition-all duration-300 ease-in-out focus:ring-2 focus:ring-[#61A3D9]"
+              class="pl-4 pr-12 ring-1 ring-inset ring-[#3F658A] rounded-[50px] w-full xl:w-[384px] h-[52px] outline-none text-[#FFFFFF] leading-[27px] text-2xl placeholder:text-[#3F658A] bg-transparent transition-all duration-300 ease-in-out focus:ring-2 focus:ring-[#61A3D9]"
               placeholder="user@gmail.com"
             />
 
@@ -34,7 +34,7 @@
 
       <div class="pt-5 xl:pt-10 border-t border-[#4C6F92]">
         <div class="flex flex-col xl:flex-row gap-5 xl:gap-0 items-center justify-between">
-          <h2 class="tr text-[#B2CAE2] text-2xl leading-[27px]">Политика конфиденциальности</h2>
+          <h2 class="tr text-[#B2CAE2] text-2xl leading-[27px] text-center xl:text-left">Политика конфиденциальности</h2>
           <nav class="flex flex-col xl:flex-row items-center gap-4 xl:gap-[30px]">
             <router-link
               to="#"

@@ -8,7 +8,7 @@
           ref="splideFirstRef"
           :has-track="false"
           :options="options"
-          class="w-full h-[300px] xl:w-[411px] xl:h-[474px] overflow-hidden rounded-2xl"
+          class="w-full h-[300px] xl:w-[411px] xl:h-[474px]"
         >
           <SplideTrack class="w-full h-full">
             <SplideSlide
@@ -16,7 +16,9 @@
               v-for="(item, index) of info"
               :key="index"
             >
-              <img :src="`${item.img}`" alt="" class="w-full h-full object-cover object-center" />
+              <div class="h-full overflow-hidden rounded-2xl">
+                <img :src="`${item.img}`" alt="" class="w-full h-full object-cover object-center" />
+              </div>
               <div class="absolute inset-0 p-[26px] flex flex-col">
                 <h1 class="mt-auto tr text-2xl tracking-[3%] text-white">- {{ item.author }}</h1>
               </div>

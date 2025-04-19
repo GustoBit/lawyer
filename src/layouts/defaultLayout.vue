@@ -11,3 +11,4 @@
 import defaultHeader from '@/views/header/defaultHeader.vue'
 import defaultFooter from '@/views/footer/defaultFooter.vue'
 </script>
+

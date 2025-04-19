@@ -3,7 +3,7 @@
     <div class="space-y-5">
       <!-- FIRST PART -->
       <div class="space-y-5 xl:space-y-0 xl:grid grid-cols-[auto_518px] gap-5 items-center">
-        <h1 class="text-gray-800 tr text-4xl text-center xl:text-left xl:text-5xl leading-[126%]">
+        <h1 class="text-gray-800 tr text-3xl text-left xl:text-5xl leading-[126%]">
           <span class="cm italic text-[#6999C8]"> Надёжная </span> юридическая
           <span class="cm italic text-[#6999C8]"> поддержка </span>, на которую можно рассчитывать в
           <span class="cm italic text-[#6999C8]"> любой ситуации </span>
@@ -35,9 +35,11 @@
             </SplideSlide>
           </SplideTrack>
 
-          <div class="px-[31px] py-[26px] absolute inset-0 bottom-0 rounded-2xl">
+          <div
+            class="px-[31px] py-[26px] absolute inset-0 bottom-0 rounded-2xl pointer-events-none"
+          >
             <div class="flex flex-col justify-end h-full">
-              <div class="line-clamp-3 tm text-[32px] text-white leading-tight">
+              <div class="line-clamp-3 tm text-2xl xl:text-[32px] text-white leading-tight">
                 Мы <span class="cs italic"> решаем </span> правовые вопросы – вы живёте
                 <span class="cs italic"> спокойно </span>
               </div>
@@ -54,10 +56,8 @@
           <img src="@/assets/img/heroimg4.jpg" alt="" class="w-full h-full object-cover" />
 
           <!-- TITLE -->
-          <div class="absolute inset-0 p-[36px] pointer-events-none">
-            <h1
-              class="ts text-2xl line-clamp-2 xl:line-clamp-3 xl:text-5xl text-white max-w-[624px] leading-tight"
-            >
+          <div class="absolute inset-0 p-4 xl:p-[36px] pointer-events-none">
+            <h1 class="ts text-2xl line-clamp-3 xl:text-5xl text-white max-w-[624px] leading-tight">
               Простые решения сложных вопросов, связанных с правом
             </h1>
           </div>
@@ -116,7 +116,7 @@ const options = {
   perPage: 1,
   arrows: false,
   pagination: true,
-  drag: false,
+  drag: true,
   speed: 800,
   pauseOnHover: false,
   pauseOnFocus: false,

@@ -2,7 +2,7 @@
   <div class="grid grid-cols-1 xl:grid-cols-3 gap-5">
     <div v-for="item of array" :key="item.text">
       <div
-        class="rounded-2xl rounded-br-[38px] overflow-hidden w-[411px] h-[359px] relative group/card bg-[#D3E3F2] flex items-center justify-center"
+        class="rounded-2xl rounded-br-[38px] overflow-hidden xl:w-[411px] h-[359px] relative group/card bg-[#D3E3F2] flex items-center justify-center"
       >
         <div
           class="absolute bottom-0 right-0 w-[92px] h-[92px] bg-white flex items-end justify-end rounded-tl-3xl transform xl:translate-y-full group-hover/card:translate-y-0 transition duration-200 z-20"

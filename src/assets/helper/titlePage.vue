@@ -1,6 +1,6 @@
 <template>
   <div class="mb-6 xl:mb-10 border-b border-[#BBC6CD] flex items-center justify-between">
-    <h1 class="cm text-6xl text-gray-900 leading-tight">{{ title }}</h1>
+    <h1 class="cm text-5xl xl:text-6xl text-gray-900 leading-tight">{{ title }}</h1>
 
     <router-link :to="to" class="hidden xl:block">
       <svg

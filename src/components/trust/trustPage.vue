@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-20 xl:mb-[80px] container">
+  <div class="mb-10 xl:mb-[80px] container">
     <div class="grid grid-cols-1 xl:grid-cols-2 gap-5">
       <div class="p-3 xl:p-[26px] bg-[#F2F6FA] rounded-3xl flex flex-col">
         <div class="space-y-[26px]">
